@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hill Cipher Encryption/Decryption</title>
+</head>
+<body>
+    <h1>Hill Cipher Encryption/Decryption</h1>
+    <form action="/encrypt" method="post">
+        <label for="plaintext">Enter Text:</label>
+        <input type="text" name="plaintext" required>
+        <label for="key_matrix">Enter Key Matrix:</label>
+        <input type="text" name="key_matrix" required>
+        <button type="submit">Encrypt</button>
+    </form>
+    <form action="/decrypt" method="post">
+        <label for="ciphertext">Enter Ciphertext:</label>
+        <input type="text" name="ciphertext" required>
+        <label for="key_matrix">Enter Key Matrix:</label>
+        <input type="text" name="key_matrix" required>
+        <button type="submit">Decrypt</button>
+    </form>
+</body>
+</html>
